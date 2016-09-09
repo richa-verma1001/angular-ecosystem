@@ -27,6 +27,9 @@ myApp.config(['$stateProvider', '$urlRouterProvider',
           this.title = 'Text sent from state definition';
         }],
         controllerAs: 'userRouteCtrl'
+      }).state('flickr', {
+        url: "/flickr",
+        template: '<div>Pull data from flickr<div>'
       })
   }
 ]);
