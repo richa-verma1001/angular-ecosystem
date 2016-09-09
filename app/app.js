@@ -3,10 +3,11 @@ import 'angular-ui-router';
 import greetUser from './components/greetUser/greetUser.component';
 import aboutUser from './components/aboutUser/aboutUser.component';
 import userAddress from './components/address/userAddress.component';
+import flickr from './components/flickr/flickr.component';
 import UserAddressConrtoller from './components/address/userAddress.controller';
 
 const moduleName = 'myApp';
-var myApp = angular.module(moduleName, ['ui.router', greetUser, aboutUser, userAddress]);
+var myApp = angular.module(moduleName, ['ui.router', greetUser, aboutUser, userAddress, flickr]);
 
 myApp.config(['$stateProvider', '$urlRouterProvider',
   function config($stateProvider, $urlRouterProvider) {
@@ -29,7 +30,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider',
         controllerAs: 'userRouteCtrl'
       }).state('flickr', {
         url: "/flickr",
-        template: '<div>Pull data from flickr<div>'
+        template: '<flickr></flickr>'
       })
   }
 ]);
