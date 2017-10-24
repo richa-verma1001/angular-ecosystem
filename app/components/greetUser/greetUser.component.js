@@ -8,7 +8,7 @@ greetModule.component('greetUser', {
     //template: 'Hello, {{$ctrl.user}}!',
     templateUrl: './app/components/greetUser/greetUser.template.html',
     controller: function GreetUserController() {
-      this.user = 'richa';
+      this.user = 'Richa';
     }
   });
 

@@ -5,8 +5,8 @@ export default function UserAddressConrtoller($scope){
   console.log($scope.$parent.userRouteCtrl.title);
   this.title = $scope.$parent.userRouteCtrl.title;
   this.address = {
-    'street': 'Laurel Branch',
+    'street': '17 Simon Street',
     'city' : 'Berkely',
-    'zip' : '141001'
+    'zip' : '000000'
   }
 }
